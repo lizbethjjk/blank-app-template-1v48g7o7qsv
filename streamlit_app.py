@@ -1,6 +1,15 @@
+import pandas as pd
 import streamlit as st
+from shapely.geometry import Point, Polygon
+import fetch as f
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+st.set_page_config(
+    page_title="HDB Resale Price Dashboard",
+    page_icon="🏢",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+        "Report a bug": "https://github.com/eeshawn11/HDB_Resale_Dashboard/issues",
+        "About": "Thanks for dropping by!"
+        }
+    )
